@@ -25,6 +25,6 @@ final class AddressTest extends TestCase
   {
     $secondaryAdress = $this->faker->secondaryAddress();
     $this->assertNotEmpty($secondaryAdress);
-    $this->assertInternalType('string', $secondaryAdress);
+    $this->assertIsString($secondaryAdress);
   }
 }

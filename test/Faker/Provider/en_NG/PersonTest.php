@@ -25,6 +25,6 @@ final class PersonTest extends TestCase
         $name = $this->faker->name;
 
         $this->assertNotEmpty($name);
-        $this->assertInternalType('string', $name);
+        $this->assertIsString($name);
     }
 }

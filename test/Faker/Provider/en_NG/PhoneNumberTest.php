@@ -26,7 +26,7 @@ final class PhoneNumberTest extends TestCase
         $phoneNumber = $this->faker->phoneNumber();
 
         $this->assertNotEmpty($phoneNumber);
-        $this->assertInternalType('string', $phoneNumber);
-        $this->assertRegExp('/^(0|(\+234))\s?[789][01]\d\s?(\d{3}\s?\d{4})/', $phoneNumber);
+        $this->assertIsString($phoneNumber);
+        $this->assertMatchesRegularExpression('/^(0|(\+234))\s?[789][01]\d\s?(\d{3}\s?\d{4})/', $phoneNumber);
     }
 }

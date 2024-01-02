@@ -18,7 +18,7 @@ final class PersonTest extends TestCase
         $this->assertContains($faker->firstName($gender), $expected);
     }
 
-    public function firstNameProvider()
+    public static function firstNameProvider()
     {
         return array(
             array(null, array('John', 'Jane')),
@@ -48,7 +48,7 @@ final class PersonTest extends TestCase
         $this->assertContains($faker->title($gender), $expected);
     }
 
-    public function titleProvider()
+    public static function titleProvider()
     {
         return array(
             array(null, array('Mr.', 'Mrs.', 'Ms.', 'Miss', 'Dr.', 'Prof.')),

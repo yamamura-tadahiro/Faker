@@ -30,6 +30,6 @@ final class AddressTest extends TestCase
     {
         $postcode = $this->faker->postcode;
 
-        $this->assertRegExp('/^[1-9]\d{3}$/', $postcode);
+        $this->assertMatchesRegularExpression('/^[1-9]\d{3}$/', $postcode);
     }
 }

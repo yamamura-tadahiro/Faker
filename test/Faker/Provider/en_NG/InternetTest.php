@@ -28,6 +28,6 @@ final class InternetTest extends TestCase
         $email = $this->faker->email();
         $this->assertNotFalse(filter_var($email, FILTER_VALIDATE_EMAIL));
         $this->assertNotEmpty($email);
-        $this->assertInternalType('string', $email);
+        $this->assertIsString($email);
     }
 }

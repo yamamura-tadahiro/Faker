@@ -29,7 +29,7 @@ final class AddressTest extends TestCase
         $postcode = $this->faker->postcode();
 
         $this->assertNotEmpty($postcode);
-        $this->assertInternalType('string', $postcode);
+        $this->assertIsString($postcode);
     }
 
     /**
@@ -40,7 +40,7 @@ final class AddressTest extends TestCase
         $county = $this->faker->county;
 
         $this->assertNotEmpty($county);
-        $this->assertInternalType('string', $county);
+        $this->assertIsString($county);
     }
 
     /**
@@ -51,7 +51,7 @@ final class AddressTest extends TestCase
         $region = $this->faker->region;
 
         $this->assertNotEmpty($region);
-        $this->assertInternalType('string', $region);
+        $this->assertIsString($region);
     }
 
 }

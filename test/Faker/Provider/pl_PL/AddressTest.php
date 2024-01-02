@@ -26,7 +26,7 @@ final class AddressTest extends TestCase
     {
         $state = $this->faker->state();
         $this->assertNotEmpty($state);
-        $this->assertInternalType('string', $state);
-        $this->assertRegExp('/[a-z]+/', $state);
+        $this->assertIsString($state);
+        $this->assertMatchesRegularExpression('/[a-z]+/', $state);
     }
 }

@@ -30,9 +30,9 @@ final class PersonTest extends TestCase
         $pattern = '/(?:^V-?\d{5,9}$)|(?:^E-?\d{8,9}$)/';
 
         $cedula = $this->faker->nationalId;
-        $this->assertRegExp($pattern, $cedula);
+        $this->assertMatchesRegularExpression($pattern, $cedula);
 
         $cedula = $this->faker->nationalId('-');
-        $this->assertRegExp($pattern, $cedula);
+        $this->assertMatchesRegularExpression($pattern, $cedula);
     }
 }
