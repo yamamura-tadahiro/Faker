@@ -14,7 +14,7 @@ final class PersonTest extends TestCase
      */
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $faker = new Generator();
         $faker->seed(1);

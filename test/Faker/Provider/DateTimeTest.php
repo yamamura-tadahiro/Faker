@@ -7,13 +7,13 @@ use PHPUnit\Framework\TestCase;
 
 final class DateTimeTest extends TestCase
 {
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->defaultTz = 'UTC';
         DateTimeProvider::setDefaultTimezone($this->defaultTz);
     }
 
-    protected function tearDown()
+    protected function tearDown(): void
     {
         DateTimeProvider::setDefaultTimezone();
     }

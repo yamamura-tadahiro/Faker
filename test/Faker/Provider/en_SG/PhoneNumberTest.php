@@ -10,7 +10,7 @@ final class PhoneNumberTest extends TestCase
 {
     private $faker;
 
-    protected function setUp()
+    protected function setUp(): void
     {
         $this->faker = Factory::create('en_SG');
         $this->faker->seed(1);
